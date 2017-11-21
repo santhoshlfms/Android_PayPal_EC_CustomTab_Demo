@@ -16,3 +16,7 @@ Android PayPal Express Checkout Demo using Chrome Custom Tab
 #### Node Server Source Code (This source code is deployed in Heroku) 
 
 >https://github.com/santhoshlfms/Android_PayPal_EC_NodeJs_Server_Sample.git
+
+##### Screencast
+
+![ScreenShot](https://github.com/santhoshlfms/Android_PayPal_EC_CustomTab_Demo/blob/master/screencast.gif)
