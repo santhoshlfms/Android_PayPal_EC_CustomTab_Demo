@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_text"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/prodImg"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@android:drawable/ic_menu_camera"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Camera"
+        android:textSize="18sp"
+        android:id="@+id/tvtitle"
+        android:paddingLeft="4dp"
+        android:paddingRight="5dp"
+        android:layout_alignTop="@+id/prodImg"
+        android:layout_toRightOf="@+id/prodImg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Price : $ 17"
+        android:lines="1"
+        android:ellipsize="end"
+        android:paddingLeft="4dp"
+        android:paddingRight="5dp"
+        android:textSize="12sp"
+        android:id="@+id/tvdesc"
+        android:layout_below="@+id/tvtitle"
+        android:layout_alignLeft="@+id/tvtitle"
+        android:layout_alignStart="@+id/tvtitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="Checkout"
+        android:textColor="@android:color/white"
+        android:id="@+id/cartbutton"
+        android:paddingLeft="4dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="10sp"
+        android:layout_below="@+id/tvdesc"
+        android:layout_alignLeft="@+id/tvdesc"
+        android:layout_alignStart="@+id/tvdesc" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
