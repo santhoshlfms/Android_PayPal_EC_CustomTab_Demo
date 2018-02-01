@@ -1,6 +1,7 @@
 package com.example.paypalcustomtabdemo;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -49,6 +50,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public boolean isPackageInstalled(String packageName) {
+        try{
+            PackageManager packageManager = getApplicationContext().getPackageManager();
+            packageManager.getPackageInfo(packageName, 0);
+            return true;
+        }catch(PackageManager.NameNotFoundException e) {
+            return false;
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,11 +104,16 @@ public class MainActivity extends AppCompatActivity {
                                 String url = Utility.getUrlFromJSONArray(response);
                                 if(!url.equals(null)) {
                                     showLoader(false);
+
                                     String packageName = "com.android.chrome";
                                     CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
                                     CustomTabsIntent customTabsIntent = builder.build();
-                                     //to choose default browser as chrome
-                                    // customTabsIntent.intent.setPackage(packageName);
+                                    // check if chrome is installed if installed always open in chrome
+                                    // so we can have OneTouch Feature !
+                                    if(isPackageInstalled(packageName)) {
+                                        customTabsIntent.intent.setPackage(packageName);
+                                    }
+
                                     customTabsIntent.intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                                     customTabsIntent.intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                     customTabsIntent.intent.setData(Uri.parse(url));
