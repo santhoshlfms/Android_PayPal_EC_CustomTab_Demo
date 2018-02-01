@@ -26,7 +26,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:customtabs:25.2.0' //25.2.0 has been published
+    compile 'com.android.support:customtabs:26.+' //25.2.0 has been published
     compile 'com.loopj.android:android-async-http:1.4.9'
     compile 'com.pddstudio:highlightjs-android:1.5.0'
     testCompile 'junit:junit:4.12'

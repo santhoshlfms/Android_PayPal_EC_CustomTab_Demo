@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\34fd888fc9203150951d2afcf0bab6f9aaaa3fe9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_785d9920ae7ede4ed4c9f1cebab7d5a8c9aa3d63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\c842444975a524b3731cc6c4b62557000899f0d1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_2e5aa322b30b74e2ecdcbde5573733c8a998c51a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\e167e833338b39e84549a012167b785fa2a0df15\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_6041375cd247e2e51336177d6ec29edf5494f488.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\ae693d9f7eefe23ab02c28def3b9fc8d7df09076\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5a1cfb6d4052c9960dbaa4bc9c763fbef58d6818">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_e231b0232f42f7a4d4e8e3c505bcf5a3b5add743.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\2337bdee24652bd3131c482b5dec9c29cdde446f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="aebd345a61f563da0989cbd014479c8bf7bd77ab">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_2ca40fa7df826dc15453aa5ed292d0df325305e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\7796687d98dc264c256e6673b21d29641602fc0a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_29786fef647e894f9f62974d7e42efa1bee39165.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\77e409e21ac72c7ac2a383fee2ccc0d39f93017c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_2dca59b6ef94c176aadb6a00ab9d288f381779e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_b537ca2ca126e0b88fb5d90d848c826be072df9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\5ab8ce9af50710d0714ab71e432e6f4d99f20b67\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_c3417a10db51a41c1e89ba17310f54ef9ad5bada.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\533ca99dab2579d55b694b6adba80ef11394ddbf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_aaf449a976e3e521eeab01c06e06f3669a15f23f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\475c4792c5cda2b6b53a524f14fb7d3ed1281987\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_4d60d146cbf7225a0f3600a2f092ea8fa9173a1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.9\386a4339ffe52d5d63e80f9bed8d2b1d1a418249\android-async-http-1.4.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.9_bf7838afbe785b60c0753a61c390f2703c9de75c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\ea838af405021b300e0cbed2655b223b8bcf58bc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_e8082d1b932a3a707384693cbfca22d9d6729a7b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.gradle\caches\modules-2\files-2.1\cz.msebera.android\httpclient\4.3.6\526a9f794eab830eae4f23a62c572878b3f491ab\httpclient-4.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\httpclient-4.3.6_768bd493d11b9b90bd37b592ec80632e5242cbe1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\.android\build-cache\72907a600c9188e161e82eae300574383cce9f08\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\classes_9e781682ac09a1950f0690f864087fc5cdd619b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sannelson\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\sannelson\Documents\Android_Public\Android_PayPal_EC_CustomTab_Demo\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_6dc014708169a984e5328b1bfc83857195e10ad3.jar" />
+    </item>
+
+</items>
