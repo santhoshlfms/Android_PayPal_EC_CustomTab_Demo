@@ -1,5 +1,6 @@
 package com.example.paypalcustomtabdemo;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
@@ -31,14 +32,6 @@ public class MainActivity extends AppCompatActivity {
     private final int CHROME_CUSTOM_TAB_REQUEST_CODE = 100;
 
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        // Check which request we're responding to
-        if (requestCode == CHROME_CUSTOM_TAB_REQUEST_CODE) {
-            Toast.makeText(getApplicationContext(), "Custom tab closed by tapping X button !", Toast.LENGTH_SHORT).show();
-        }
-    }
-
     public void showLoader(Boolean setVisibilty) {
         ProgressBar progress = (ProgressBar) findViewById(R.id.progressBar);
         int colorCodeDark = Color.parseColor("#253B80");
@@ -56,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             packageManager.getPackageInfo(packageName, 0);
             return true;
         }catch(PackageManager.NameNotFoundException e) {
+            Log.d("firing ","Fire in the hole");
             return false;
         }
     }
@@ -104,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
                                 String url = Utility.getUrlFromJSONArray(response);
                                 if(!url.equals(null)) {
                                     showLoader(false);
-
                                     String packageName = "com.android.chrome";
                                     CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
                                     CustomTabsIntent customTabsIntent = builder.build();
@@ -113,18 +106,18 @@ public class MainActivity extends AppCompatActivity {
                                     if(isPackageInstalled(packageName)) {
                                         customTabsIntent.intent.setPackage(packageName);
                                     }
-
                                     customTabsIntent.intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                                     customTabsIntent.intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                     customTabsIntent.intent.setData(Uri.parse(url));
                                     startActivityForResult(customTabsIntent.intent, CHROME_CUSTOM_TAB_REQUEST_CODE);
-
                                 }
-                            }catch (JSONException e) {
+                            }
+                            catch(JSONException e) {
                                 e.printStackTrace();
                             }
-
-
+                            catch(ActivityNotFoundException a) {
+                                Toast.makeText(getApplicationContext(),"No Browser Found",Toast.LENGTH_LONG).show();
+                            }
                         }
                     });
                 }catch (Exception e) {
