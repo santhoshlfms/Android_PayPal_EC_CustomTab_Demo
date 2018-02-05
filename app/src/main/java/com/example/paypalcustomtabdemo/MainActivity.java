@@ -92,8 +92,7 @@ public class MainActivity extends AppCompatActivity {
                     client.post(getApplicationContext(), url, requestData, "application/json", new JsonHttpResponseHandler(){
                         @Override
                         public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, JSONObject response) {
-                            Toast.makeText(getApplicationContext(), "Got response from server" , Toast.LENGTH_SHORT).show();
-
+                            // code block to open up URL in Custom Tab
                             try{
                                 String url = Utility.getUrlFromJSONArray(response);
                                 if(!url.equals(null)) {

@@ -43,13 +43,10 @@ public class ProcessComplete extends AppCompatActivity {
         setContentView(R.layout.process_complete);
 
         List<String> params = getIntent().getData().getPathSegments();
-        Log.d("Params",String.valueOf(params));
         TextView textView = (TextView) findViewById(R.id.status);
         final TextView textLoader = (TextView) findViewById(R.id.statusLoading);
         final HighlightJsView highlightJsView = (HighlightJsView) findViewById(R.id.highlight_view);
         if(params.get(0).equals("success")){
-            Log.d("ID",params.get(1));
-            Log.d("PayerId",params.get(2));
             textView.setText("Transaction Sucesss");
             try{
 
@@ -67,10 +64,8 @@ public class ProcessComplete extends AppCompatActivity {
                 client.post( url,  new JsonHttpResponseHandler(){
                     @Override
                     public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, JSONObject response) {
-                        Log.d("My Result Json", String.valueOf(response));
                         // pass the result to an sdk
                         highlightJsView.setTheme(Theme.ANDROID_STUDIO);
-
                         highlightJsView.setHighlightLanguage(Language.AUTO_DETECT);
                         try{
                             highlightJsView.setSource(String.valueOf(String.valueOf(response.toString(4))));

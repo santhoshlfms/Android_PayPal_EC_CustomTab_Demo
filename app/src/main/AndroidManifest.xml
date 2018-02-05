@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <!--Actvity to open once the execute payments api is completed-->
         <activity android:name=".ProcessComplete">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
