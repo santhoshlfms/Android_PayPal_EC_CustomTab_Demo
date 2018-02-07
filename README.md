@@ -13,6 +13,11 @@ Android PayPal Express Checkout Demo using Chrome Custom Tab
 
 >https://node-paypal-express-sever.herokuapp.com/
 
+>If you like to use your own server please change the below properties in assets/app.properties
+	> createPayments=https://node-paypal-express-sever.herokuapp.com/create-payments
+	> getPaymentDetails=https://node-paypal-express-sever.herokuapp.com/get-payment-details
+
+
 #### Node Server Source Code (This source code is deployed in Heroku) 
 
 >https://github.com/santhoshlfms/Android_PayPal_EC_NodeJs_Server_Sample.git
