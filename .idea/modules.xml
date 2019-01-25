@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android_PayPal_EC_CustomTab_Demo.iml" filepath="$PROJECT_DIR$/Android_PayPal_EC_CustomTab_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/riskcomponent-release/riskcomponent-release.iml" filepath="$PROJECT_DIR$/riskcomponent-release/riskcomponent-release.iml" />
     </modules>
   </component>
 </project>

@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.paypalcustomtabdemo">
-        <uses-permission android:name="android.permission.INTERNET" />
-        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- following permission is optional -->
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- for reading GSF ID -->
+
 
     <application
         android:allowBackup="true"
@@ -11,7 +18,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:launchMode="singleTask">
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,12 +31,57 @@
             </intent-filter>
         </activity>
         <!--Actvity to open once the execute payments api is completed-->
+        <!--  <activity android:name=".ProcessComplete">-->
         <activity android:name=".ProcessComplete">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="com.example.paypalcustomtabdemo"/>
+
+                <data android:scheme="com.example.paypalcustomtabdemo" />
+                <!--
+                <data android:scheme="https" android:host="node-paypal-express-sever.herokuapp.com" android:pathPrefix="/paypalPaymentSuccess"/>
+-->
+                <!-- <data android:scheme="scan" android:host="santhoshdemo" android:path="/scan"  />
+                <data android:scheme="http" android:host="sparsi.serveo.net" android:path="/aaa" android:pathPrefix="/aaa"/>
+                <data android:scheme="https" android:host="sparsi.serveo.net" android:path="/aaa" android:pathPrefix="/aaa"/>-->
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="qwerty"
+                    android:host="scan"
+                    android:path="/" />
+            </intent-filter>
+
+
+            <!--   <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="com.example.paypalcustomtabdemo"
+                    android:path="/scan" />
+            </intent-filter>-->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="node-paypal-express-sever.herokuapp.com"
+                    android:path="/success.html" />
             </intent-filter>
         </activity>
 
