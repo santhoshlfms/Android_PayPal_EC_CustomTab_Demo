@@ -105,8 +105,6 @@ public class MainActivity extends AppCompatActivity {
                                     if(isPackageInstalled(packageName)) {
                                         customTabsIntent.intent.setPackage(packageName);
                                     }
-                                    customTabsIntent.intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-                                    customTabsIntent.intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                     customTabsIntent.intent.setData(Uri.parse(url));
                                     startActivityForResult(customTabsIntent.intent, CHROME_CUSTOM_TAB_REQUEST_CODE);
                                 }
