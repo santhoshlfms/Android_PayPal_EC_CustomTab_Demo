@@ -22,6 +22,14 @@ Android PayPal Express Checkout Demo using Chrome Custom Tab
 
 >https://github.com/santhoshlfms/Android_PayPal_EC_NodeJs_Server_Sample.git
 
+##### Integration Document 
+
+> https://github.com/santhoshlfms/Android_PayPal_EC_CustomTab_Demo/blob/master/PayPal_Express_Checkout_AndroidCCT.pdf
+
+
 ##### Screencast
 
 ![ScreenShot](https://github.com/santhoshlfms/Android_PayPal_EC_CustomTab_Demo/blob/master/screencast.gif)
+
+
+
